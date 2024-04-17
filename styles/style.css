@@ -7,15 +7,30 @@
   padding: 0;
 }
 :root {
-  --box-shadow: ;
-  --border-colors: ;
-  --color-white: ;
-  --border-top: ;
-  --title-color: ;
+  --white: #ffffff;
+
+  --primary-dark-900: #0a196f;
+  --primary-dark-800: #102587;
+  --primary-dark-700: #1a37a7;
+  --primary-dark-600: #264bc8;
+  --primary-defualt-500: #3563e9;
+  --primary-light-400: #658df1;
+  --primary-light-300: #85a8f8;
+  --primary-light-200: #aec8fc;
+  --primary-light-100: #d6e4fd;
+
+  --secondinary-dark-900: #040815;
+  --secondinary-dark-800: #080C19;
+  --secondinary-dark-700: #0D121F;
+  --secondinary-dark-600: #131825;
+  --secondinary-defualt-500: #1A202C;
+  --secondinary-light-400: #596780;
+  --secondinary-light-300: #90A3BF;
+  --secondinary-light-200: #C3D4E9;
+  --secondinary-light-100: #E0E9F4;  
 }
 /* Html */
 html {
   font-size: 62.5%;
   font-family: "Plus Jakarta Sans";
 }
-
