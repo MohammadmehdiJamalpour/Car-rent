@@ -104,9 +104,12 @@ html {
   color: var(--Secondary-300);
   font-family: "Plus Jakarta Sans";
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
 }
-.biling-info__body input:focus{
-background: var(--primary-100);
-outline-color: var(--Secondary-300);
+.biling-info__body input:focus {
+  background: var(--primary-100);
+  outline-color: var(--Secondary-300);
 }
+
+/* rental Summary */
+
