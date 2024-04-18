@@ -113,3 +113,47 @@ html {
 
 /* rental Summary */
 
+.rental-summary {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+}
+.rental-summary__car--details {
+  display: flex;
+  align-items: center;
+}
+.rental-summary__car--rate {
+  display: flex;
+  align-items: center;
+}
+.rental-summary__car--rate span {
+  display: flex;
+
+}
+.rental-summary__car--details > :first-child {
+  display: inline-block;
+  max-width: 13rem;
+  max-height: 10rem;
+  background: url(/assests/car.png) var(--primary-500) 0.5rem -0.5rem / 90% 120%  no-repeat;
+  border-radius: 8px;
+  transform: rotatey(180deg);
+}
+.line {
+  background: rgba(195, 212, 233, 0.40);
+  height: 1px;
+  width: 100%;
+}
+.subtotal,.tax {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.total-rental-price {
+  display: flex;
+  justify-content: space-between;
+}
+.total-rental-price div{
+ display: flex;
+ flex-direction: column;
+
+}
