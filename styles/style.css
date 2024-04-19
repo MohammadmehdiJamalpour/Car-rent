@@ -44,6 +44,34 @@ html {
   padding: 2.4rem;
 }
 
+/* Input and label  */
+.label {
+  margin-bottom: 1.6rem;
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.input {
+  border-radius: 10px;
+  background: var(--input-background-color);
+  border: 0;
+  padding: 1.6rem 3.2rem;
+  overflow-y: auto;
+  width: 0;
+  min-width: 100%;
+}
+input:focus {
+  background: var(--primary-100);
+  outline-color: var(--Secondary-300);
+}
+.input::placeholder {
+  color: var(--Secondary-300);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
 /* Biling Info */
 .biling-info {
   display: flex;
@@ -83,33 +111,6 @@ html {
   flex-direction: column;
   align-items: flex-start;
 }
-.biling-info__body label {
-  margin-bottom: 1.6rem;
-  color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.biling-info__body input {
-  border-radius: 10px;
-  background: var(--input-background-color);
-  border: 0;
-  padding: 1.6rem 3.2rem;
-  overflow-y: auto;
-  width: 0;
-  min-width: 100%;
-}
-
-.biling-info__body input::placeholder {
-  color: var(--Secondary-300);
-  font-family: "Plus Jakarta Sans";
-  font-size: 1.4rem;
-  font-weight: 300;
-}
-.biling-info__body input:focus {
-  background: var(--primary-100);
-  outline-color: var(--Secondary-300);
-}
 
 /* rental Summary */
 
@@ -117,6 +118,19 @@ html {
   display: flex;
   flex-direction: column;
   max-width: 50rem;
+}
+.rental-summary__title {
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.rental-summary__explanation {
+  color: var(--Secondary-300);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 160%;
 }
 .rental-summary__car--details {
   display: flex;
@@ -128,32 +142,94 @@ html {
 }
 .rental-summary__car--rate span {
   display: flex;
-
 }
 .rental-summary__car--details > :first-child {
   display: inline-block;
   max-width: 13rem;
   max-height: 10rem;
-  background: url(/assests/car.png) var(--primary-500) 0.5rem -0.5rem / 90% 120%  no-repeat;
+  background: url(/assests/car.png) var(--primary-500) 0.5rem -0.5rem / 90% 120%
+    no-repeat;
   border-radius: 8px;
   transform: rotatey(180deg);
 }
+.rental-summary__car--model {
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 140%; /* 44.8px */
+}
+.rental-summary__car--rate p {
+  color: #3d5278;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
 .line {
-  background: rgba(195, 212, 233, 0.40);
+  background: rgba(195, 212, 233, 0.4);
   height: 1px;
   width: 100%;
 }
-.subtotal,.tax {
+.subtotal,
+.tax {
   display: flex;
   justify-content: space-between;
 }
- 
+.subtotal__title,
+.tax__title {
+  color: var(--Secondary-300);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+.subtotal__price,
+.tax__price {
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 120%;
+}
 .total-rental-price {
   display: flex;
   justify-content: space-between;
 }
-.total-rental-price div{
- display: flex;
- flex-direction: column;
-
+.total-rental-price div {
+  display: flex;
+  flex-direction: column;
+}
+.promo-code {
+  position: relative;
+}
+.promo-code label {
+  position: absolute;
+  right: 6%;
+  top: 30%;
+  cursor: pointer;
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+.total-rental-price__title {
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.total-rental-price__explanation {
+  color: var(--Secondary-300);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 160%;
+}
+.total-rental-price__price {
+  color: var(--Secondary-500);
+  font-family: "Plus Jakarta Sans";
+  font-size: 3.2rem;
+  font-weight: 700;
 }
