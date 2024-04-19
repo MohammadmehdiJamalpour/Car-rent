@@ -72,7 +72,28 @@ input:focus {
   font-weight: 300;
 }
 
+
+/* car images and background general styles  */
+
+.car--image__bg {
+  display: inline-block;
+  border-radius: 8px;
+  width: 13.2rem;
+  padding: 1rem;
+  height: 10.8rem;
+  background: #3563e9;
+  background-image: url(/assests/bg.svg);
+}
+.car--image {
+  max-width: 100%;
+  max-height: 100%;
+  transform: rotatey(180deg);
+}
+
+
 /* Biling Info */
+
+
 .biling-info {
   display: flex;
   flex-direction: column;
@@ -134,12 +155,12 @@ input:focus {
   line-height: 130%;
   margin-bottom: 2.6rem;
 }
-.rental-summary__car--details{
+.rental-summary__car--details {
   display: flex;
   align-items: center;
-margin-bottom: 2.6rem;
+  margin-bottom: 2.6rem;
 }
-.rental-summary__car--details>div{
+.rental-summary__car--details > div {
   margin-left: 1rem;
 }
 .rental-summary .line {
@@ -151,23 +172,19 @@ margin-bottom: 2.6rem;
 }
 .rental-summary__car--rate span {
   display: flex;
-  margin-right: 0.8rem;
+  margin-right: 0.5rem;
 }
-.rental-summary__car--details > :first-child {
-  display: inline-block;
-  max-width: 13rem;
-  max-height: 10rem;
-  background: url(/assests/car.png) var(--primary-500) 0.5rem -0.5rem / 90% 120%
-    no-repeat;
-  border-radius: 8px;
-  transform: rotatey(180deg);
+.rental-summary__car--rate span svg{
+  margin-right: 0.3rem;
 }
+
 .rental-summary__car--model {
   color: var(--Secondary-500);
   font-family: "Plus Jakarta Sans";
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 140%; /* 44.8px */
+  margin-bottom: 0.6rem;
 }
 .rental-summary__car--rate p {
   color: #3d5278;
@@ -186,10 +203,11 @@ margin-bottom: 2.6rem;
   display: flex;
   justify-content: space-between;
 }
-.subtotal{
+.subtotal {
   margin-bottom: 2.4rem;
 }
-.tax,.promo-code{
+.tax,
+.promo-code {
   margin-bottom: 3.2rem;
 }
 .subtotal__title,
