@@ -124,17 +124,26 @@ input:focus {
   font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 .rental-summary__explanation {
   color: var(--Secondary-300);
   font-family: "Plus Jakarta Sans";
   font-size: 1.4rem;
   font-weight: 500;
-  line-height: 160%;
+  line-height: 130%;
+  margin-bottom: 2.6rem;
 }
-.rental-summary__car--details {
+.rental-summary__car--details{
   display: flex;
   align-items: center;
+margin-bottom: 2.6rem;
+}
+.rental-summary__car--details>div{
+  margin-left: 1rem;
+}
+.rental-summary .line {
+  margin-bottom: 3.2rem;
 }
 .rental-summary__car--rate {
   display: flex;
@@ -142,6 +151,7 @@ input:focus {
 }
 .rental-summary__car--rate span {
   display: flex;
+  margin-right: 0.8rem;
 }
 .rental-summary__car--details > :first-child {
   display: inline-block;
@@ -175,6 +185,12 @@ input:focus {
 .tax {
   display: flex;
   justify-content: space-between;
+}
+.subtotal{
+  margin-bottom: 2.4rem;
+}
+.tax,.promo-code{
+  margin-bottom: 3.2rem;
 }
 .subtotal__title,
 .tax__title {
@@ -219,6 +235,7 @@ input:focus {
   font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 .total-rental-price__explanation {
   color: var(--Secondary-300);
