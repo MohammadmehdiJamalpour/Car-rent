@@ -1,7 +1,7 @@
 <h1 align="center">Car Rental Website with Dashboard (Under Development)</h1>
 
 <p align="center">
-  <img src="[[car-rental-website-screenshot.png](https://cdn.discordapp.com/attachments/1115280542087249980/1230945840563228794/Screenshot_71.png?ex=66352aa6&is=6622b5a6&hm=c6cd2ed37b99d9b66ec39699044168f3440d0dcc1086f6a58c4a777df5bac002)](https://cdn.discordapp.com/attachments/1115280542087249980/1230945840563228794/Screenshot_71.png?ex=66352aa6&is=6622b5a6&hm=c6cd2ed37b99d9b66ec39699044168f3440d0dcc1086f6a58c4a777df5bac002&)" alt="Project Screenshot">
+  <img src="https://cdn.discordapp.com/attachments/1115280542087249980/1230945840563228794/Screenshot_71.png?ex=66352aa6&is=6622b5a6&hm=c6cd2ed37b99d9b66ec39699044168f3440d0dcc1086f6a58c4a777df5bac002&" alt="Project Screenshot">
     <img src="https://cdn.discordapp.com/attachments/1115280542087249980/1230945840940454029/Screenshot_72.png?ex=66352aa6&is=6622b5a6&hm=8701d978969d01c3572689e92e245c7eb18f8809e2cc14168c40b6df7dbfad60&" alt="Project Screenshot">
 </p>
 
