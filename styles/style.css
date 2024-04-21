@@ -10,15 +10,15 @@
 :root {
   --white: #ffffff;
 
-  --primary-900: #0a196f;
-  --primary-800: #102587;
-  --primary-700: #1a37a7;
-  --primary-600: #264bc8;
-  --primary-500: #3563e9;
-  --primary-400: #658df1;
-  --primary-300: #85a8f8;
-  --primary-200: #aec8fc;
-  --primary-100: #d6e4fd;
+  --Primary-900: #0a196f;
+  --Primary-800: #102587;
+  --Primary-700: #1a37a7;
+  --Primary-600: #264bc8;
+  --Primary-500: #3563e9;
+  --Primary-400: #658df1;
+  --Primary-300: #85a8f8;
+  --Primary-200: #aec8fc;
+  --Primary-100: #d6e4fd;
 
   --Secondary-900: #040815;
   --Secondary-800: #080c19;
@@ -63,7 +63,7 @@ html {
   min-width: 100%;
 }
 input:focus {
-  background: var(--primary-100);
+  background: var(--Primary-100);
   outline-color: var(--Secondary-300);
 }
 .input::placeholder {
@@ -268,37 +268,82 @@ input:focus {
 }
 
 /* Catalogue Card  */
-.catalogue{
+.catalogue {
   max-width: 30rem;
   display: flex;
   flex-direction: column;
 }
-.catalogue__info{
+.catalogue__info {
   display: flex;
   justify-content: space-between;
 }
-.catalogue__information{
+.catalogue__model {
+  color: var(--Secondary-500);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.catalogue__type {
+  color: var(--Secondary-300);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.catalogue__information {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 5rem;
 }
-.catalogue__details{
+.catalogue__details {
   display: flex;
   justify-content: center;
   margin-bottom: 2.4rem;
 }
-.catalogue__details__part{
+.catalogue__details__part {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.catalogue__price{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.catalogue__price__number span{
+.catalogue__details__part {
   color: var(--Secondary-300);
-
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.catalogue__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalogue__price__number {
+  color: var(--Secondary-500);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.catalogue__price__number span {
+  color: var(--Secondary-300);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.catalogue__img {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+.catalogue__img img {
+  width: 100%;
+}
+.fade-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 50%;
+  bottom: 0;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+.rent-btn {
+  border-radius: 4px;
+  background: var(--Primary-500);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
