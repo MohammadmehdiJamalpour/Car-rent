@@ -73,7 +73,6 @@ input:focus {
   font-weight: 300;
 }
 
-
 /* car images and background general styles  */
 
 .car--image__bg {
@@ -91,9 +90,7 @@ input:focus {
   transform: rotatey(180deg);
 }
 
-
 /* Biling Info */
-
 
 .biling-info {
   display: flex;
@@ -175,7 +172,7 @@ input:focus {
   display: flex;
   margin-right: 0.5rem;
 }
-.rental-summary__car--rate span svg{
+.rental-summary__car--rate span svg {
   margin-right: 0.3rem;
 }
 
@@ -268,4 +265,40 @@ input:focus {
   font-family: "Plus Jakarta Sans";
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+/* Catalogue Card  */
+.catalogue{
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.catalogue__info{
+  display: flex;
+  justify-content: space-between;
+}
+.catalogue__information{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+.catalogue__details{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+.catalogue__details__part{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalogue__price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalogue__price__number span{
+  color: var(--Secondary-300);
+
 }
