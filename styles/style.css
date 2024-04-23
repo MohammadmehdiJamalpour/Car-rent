@@ -34,8 +34,8 @@
 }
 /* Html */
 html {
-  font-size: 62.5%;
   font-family: "Plus Jakarta Sans";
+  font-size: 62.5%;
   background-color: #f9f9f9;
 }
 
@@ -49,7 +49,6 @@ html {
 .label {
   margin-bottom: 1.6rem;
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -68,7 +67,6 @@ input:focus {
 }
 .input::placeholder {
   color: var(--Secondary-300);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -127,11 +125,9 @@ input:focus {
 
 .biling-info__title {
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  
 }
 
 .biling-info__body div {
@@ -149,14 +145,12 @@ input:focus {
 }
 .rental-summary__title {
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .rental-summary__explanation {
   color: var(--Secondary-300);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 130%;
@@ -187,7 +181,6 @@ input:focus {
 
 .rental-summary__car--model {
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 140%; /* 44.8px */
@@ -195,7 +188,6 @@ input:focus {
 }
 .rental-summary__car--rate p {
   color: #3d5278;
-  font-family: "Plus Jakarta Sans";
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -220,7 +212,6 @@ input:focus {
 .subtotal__title,
 .tax__title {
   color: var(--Secondary-300);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 120%;
@@ -228,7 +219,6 @@ input:focus {
 .subtotal__price,
 .tax__price {
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 120%;
@@ -250,28 +240,23 @@ input:focus {
   top: 30%;
   cursor: pointer;
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.6rem;
   font-weight: 600;
-  line-height: 120%;
 }
 .total-rental-price__title {
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .total-rental-price__explanation {
   color: var(--Secondary-300);
-  font-family: "Plus Jakarta Sans";
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 160%;
 }
 .total-rental-price__price {
   color: var(--Secondary-500);
-  font-family: "Plus Jakarta Sans";
   font-size: 3.2rem;
   font-weight: 700;
 }
@@ -404,11 +389,11 @@ input:focus {
 
     letter-spacing: -0.32px;
   }
-  .biling-info__explanation{
+  .biling-info__explanation {
     font-size: 1.2rem;
     line-height: 160%; /* 19.2px */
     letter-spacing: -0.12px;
-    grid-column-start:1 ;
+    grid-column-start: 1;
     grid-column-end: -1;
   }
   .biling-info__step {
@@ -419,6 +404,65 @@ input:focus {
   }
   .biling-info__title {
     font-size: 1.6rem;
-    margin-bottom: 0.5rem ;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Rental Summary  */
+
+  .rental-summary__title {
+    font-size: 1.6rem;
+  }
+  .rental-summary__explanation {
+    font-size: 1.2rem;
+    line-height: 160%; /* 19.2px */
+  }
+  .rental-summary__car--model {
+    font-size: 2rem;
+  }
+  .rental-summary__car--rate {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rental-summary__car--rate p {
+    font-size: 1.2rem;
+    letter-spacing: 0.24px;
+  }
+  .rental-summary__car--rate span {
+    margin-bottom: 0.4rem;
+  }
+  .rental-summary__car--rate span svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .car__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .car__image__bg {
+    max-width: 15rem;
+    max-height: 9rem;
+  }
+  .subtotal__title,
+  .tax__title {
+    font-size: 1.2rem;
+  }
+  .promo-code .label {
+    font-size: 1.2rem;
+    top: 35%;
+  }
+  .total-rental-price__title {
+    font-size: 1.6rem;
+  }
+  .total-rental-price__explanation {
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: -0.12px;
+    max-width: 69%;
+  }
+  .total-rental-price__price {
+    font-size: 2rem;
   }
 }
