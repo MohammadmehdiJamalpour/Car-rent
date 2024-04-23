@@ -262,6 +262,7 @@ input:focus {
 }
 
 /* Catalogue Card  */
+
 .catalogue {
   max-width: 30rem;
   display: flex;
@@ -297,13 +298,14 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--Secondary-300);
-  font-size: 1.4rem;
-  font-weight: 500;
+  
   margin-left: 1.6rem;
 }
 .catalogue__details__part p {
   margin-left: 0.4rem;
+  color: var(--Secondary-300);
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 .catalogue__details:last-child {
   margin-left: 0;
@@ -475,5 +477,54 @@ input:focus {
   }
   .rental-summary .line {
     margin-bottom: 1.6rem;
+  }
+
+  /* Catalogue  */
+
+  .catalogue {
+    max-width: 100%;
+    padding: 1.6rem;
+  }
+  .car__stats {
+    display: flex;
+  }
+  .car__stats .catalogue__img {
+    width: 70%;
+  }
+  .car__stats .catalogue__details {
+    width: 30%;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+    margin-left: 8rem;
+  }
+  .catalogue__details__part {
+    margin-left: 0;
+    margin-bottom: 1.6rem;
+    justify-content: flex-start;
+  }
+  .catalogue__model {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+  }
+  .catalogue__type {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+  }
+  .catalogue__price__number {
+    font-size: 1.6rem;
+    letter-spacing: -0.16px;
+  }
+  .catalogue__price__number span {
+    font-size: 1.2rem;
+    letter-spacing: -0.12px;
+  }
+  .rent-btn {
+    font-size: 1.2rem;
+    padding: 1rem 1.6rem;
+  }
+  .catalogue__details__part p {
+    font-size: 1.2rem;
   }
 }
