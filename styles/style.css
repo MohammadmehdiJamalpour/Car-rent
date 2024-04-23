@@ -75,7 +75,7 @@ input:focus {
 
 /* car images and background general styles  */
 
-.car--image__bg {
+.car__image__bg {
   display: inline-block;
   border-radius: 8px;
   width: 13.2rem;
@@ -84,7 +84,7 @@ input:focus {
   background: #3563e9;
   background-image: url(/assests/bg.svg);
 }
-.car--image {
+.car__image {
   max-width: 100%;
   max-height: 100%;
   transform: rotatey(180deg);
@@ -281,7 +281,7 @@ input:focus {
   color: var(--Secondary-500);
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 .catalogue__type {
   color: var(--Secondary-300);
@@ -314,7 +314,9 @@ input:focus {
 .catalogue__details:last-child{
   margin-left: 0;
 }
-
+.catalogue__details__part p span {
+  margin-right: 0.3rem;
+}
 .catalogue__price {
   display: flex;
   align-items: center;
