@@ -308,10 +308,10 @@ input:focus {
   font-weight: 500;
   margin-left: 1.6rem;
 }
-.catalogue__details__part p{
+.catalogue__details__part p {
   margin-left: 0.4rem;
 }
-.catalogue__details:last-child{
+.catalogue__details:last-child {
   margin-left: 0;
 }
 .catalogue__details__part p span {
@@ -358,4 +358,45 @@ input:focus {
   padding: 1rem 2rem;
   border: 0;
   cursor: pointer;
+}
+
+/* Responsive sm size  */
+
+@media screen and (max-width: 640px) {
+  /* Card  */
+  .card {
+    margin: 3.2rem 2.4rem;
+  }
+
+  /* input */
+  .input {
+    font-size: 1.2rem;
+    letter-spacing: -0.24px;
+    padding: 1.8rem 2.4rem;
+  }
+  .input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+  }
+  .label {
+    font-size: 1.4rem;
+    letter-spacing: -0.28px;
+  }
+
+  /* Biling Info */
+
+  .biling-info__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .biling-info__title {
+    font-size: 1.6rem;
+
+    letter-spacing: -0.32px;
+  }
+  .biling-info__informations {
+    font-size: 1.2rem;
+    letter-spacing: -0.24px;
+  }
 }
