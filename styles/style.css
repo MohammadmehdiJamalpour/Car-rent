@@ -415,6 +415,7 @@ input:focus {
   .rental-summary__explanation {
     font-size: 1.2rem;
     line-height: 160%; /* 19.2px */
+    margin-bottom: 2.4rem;
   }
   .rental-summary__car--model {
     font-size: 2rem;
@@ -447,6 +448,13 @@ input:focus {
   .tax__title {
     font-size: 1.2rem;
   }
+  .subtotal {
+    margin-bottom: 1.2rem;
+  }
+  .tax,
+  .promo-code {
+    margin-bottom: 2.4rem;
+  }
   .promo-code .label {
     font-size: 1.2rem;
     top: 35%;
@@ -464,5 +472,8 @@ input:focus {
   }
   .total-rental-price__price {
     font-size: 2rem;
+  }
+  .rental-summary .line {
+    margin-bottom: 1.6rem;
   }
 }
