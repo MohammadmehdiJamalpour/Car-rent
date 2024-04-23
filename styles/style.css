@@ -97,11 +97,26 @@ input:focus {
   flex-direction: column;
   max-width: 85rem;
 }
-.biling-info__informations {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3.2rem;
+.biling-info__header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
+.biling-info__step {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-self: self-end;
+  color: var(--Secondary-300, #90a3bf);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.biling-info__explanation {
+  grid-row-start: 2;
+  color: var(--Secondary-300, #90a3bf);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 .biling-info__body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -109,22 +124,16 @@ input:focus {
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
-.biling-info__body div {
-  display: -ms-inline-grid;
-}
+
 .biling-info__title {
   color: var(--Secondary-500);
   font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  
 }
-.biling-info__informations p {
-  color: var(--Secondary-300);
-  font-family: "Plus Jakarta Sans";
-  font-size: 1.4rem;
-  font-weight: 500;
-}
+
 .biling-info__body div {
   display: flex;
   flex-direction: column;
@@ -395,8 +404,21 @@ input:focus {
 
     letter-spacing: -0.32px;
   }
-  .biling-info__informations {
+  .biling-info__explanation{
     font-size: 1.2rem;
-    letter-spacing: -0.24px;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: -0.12px;
+    grid-column-start:1 ;
+    grid-column-end: -1;
+  }
+  .biling-info__step {
+    grid-row-end: 1;
+    justify-self: self-end;
+    font-size: 1.2rem;
+    letter-spacing: -0.12px;
+  }
+  .biling-info__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem ;
   }
 }
