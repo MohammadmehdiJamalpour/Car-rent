@@ -95,12 +95,12 @@ input:focus {
   flex-direction: column;
   max-width: 85rem;
 }
-.biling-info__header {
+.biling-info__header,.rental-info__header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-.biling-info__step {
+.biling-info__step,.rental-info__step {
   grid-column-start: 2;
   grid-row-start: 2;
   justify-self: self-end;
@@ -108,14 +108,14 @@ input:focus {
   font-size: 1.4rem;
   font-weight: 500;
 }
-.biling-info__explanation {
+.biling-info__explanation,.rental-info__explanation {
   grid-row-start: 2;
   color: var(--Secondary-300, #90a3bf);
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.biling-info__body {
+.biling-info__body,.pick-up__info,.drop-off__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -123,7 +123,7 @@ input:focus {
   row-gap: 2.4rem;
 }
 
-.biling-info__title {
+.biling-info__title,.rental-info__title {
   color: var(--Secondary-500);
   font-size: 2rem;
   font-weight: 700;
@@ -356,6 +356,22 @@ input:focus {
   cursor: pointer;
 }
 
+/* Rental Info */
+
+.rental-info{
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+}
+
+
+.pick-up__checkbox{
+  display: flex;
+  align-items: center;
+}
+
+
+
 /* Responsive sm size  */
 
 @media screen and (max-width: 640px) {
@@ -382,23 +398,21 @@ input:focus {
 
   /* Biling Info */
 
-  .biling-info__body {
-    display: flex;
-    flex-direction: column;
+  .biling-info__body,.pick-up__info,.drop-off__info {
+    grid-template-columns: 1fr;
   }
-  .biling-info__title {
+  .biling-info__title,.rental-info__title {
     font-size: 1.6rem;
-
     letter-spacing: -0.32px;
   }
-  .biling-info__explanation {
+  .biling-info__explanation,.rental-info__explanation {
     font-size: 1.2rem;
     line-height: 160%; /* 19.2px */
     letter-spacing: -0.12px;
     grid-column-start: 1;
     grid-column-end: -1;
   }
-  .biling-info__step {
+  .biling-info__step,.rental-info__step {
     grid-row-end: 1;
     justify-self: self-end;
     font-size: 1.2rem;
@@ -528,4 +542,6 @@ input:focus {
   .catalogue__details__part p {
     font-size: 1.2rem;
   }
+
 }
+
