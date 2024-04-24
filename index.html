@@ -31,17 +31,33 @@
         </div>
         <div>
           <label for="pick-update" class="label">Date</label>
-          <input class="input" name="pick-update" type="date" />
+          <input
+            class="input"
+            placeholder="Date"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+            name="pick-update"
+          />
         </div>
         <div>
           <label for="pick-uptime" class="label">Time</label>
-          <input class="input" name="pick-uptime" type="time" />
+          <input
+            class="input"
+            name="pick-uptime"
+            placeholder="Time"
+            type="text"
+            onfocus="(this.type='time')"
+            onblur="(this.type='text')"
+            id="time"
+          />
         </div>
       </div>
 
       <div>
         <input type="checkbox" name="drop-off" id="drop-off" />
-        <label for="drop-off">Drop-off</label>
+        <label for="drop-off">drop-off</label>
       </div>
 
       <div class="drop-off__info">
@@ -58,11 +74,28 @@
         </div>
         <div>
           <label for="drop-offdate" class="label">Date</label>
-          <input class="input" name="drop-offdate" type="date" />
+          <input
+            class="input"
+            placeholder="Date"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+            name="drop-offdate"
+          />
         </div>
-        <div>
+        <div for="dro">
           <label for="drop-offtime" class="label">Time</label>
-          <input class="input" name="drop-offtime" type="time" />
+          <input
+            class="input"
+            name="drop-offtime"
+            placeholder="Time"
+            type="text"
+            onfocus="(this.type='time')"
+            onblur="(this.type='text')"
+            id="time"
+            name="pick-uptime"
+          />
         </div>
       </div>
     </section>
