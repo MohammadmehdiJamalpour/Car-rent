@@ -466,11 +466,11 @@ input:focus {
   }
   .total-rental-price__explanation {
     font-size: 1.2rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    text-overflow: ellipsis;
     letter-spacing: -0.12px;
-    max-width: 69%;
   }
   .total-rental-price__price {
     font-size: 2rem;
@@ -487,6 +487,7 @@ input:focus {
   }
   .car__stats {
     display: flex;
+    align-items: center;
   }
   .car__stats .catalogue__img {
     width: 70%;
@@ -495,7 +496,7 @@ input:focus {
     width: 30%;
     flex-direction: column;
     margin-bottom: 2.4rem;
-    margin-left: 8rem;
+    margin-left: 5rem;
   }
   .catalogue__details__part {
     margin-left: 0;
