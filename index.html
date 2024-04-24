@@ -8,131 +8,63 @@
     <title>Car Rent</title>
   </head>
   <body>
-    <section class="rental-summary card">
-      <h4 class="rental-summary__title">Rental Summary</h4>
-      <p class="rental-summary__explanation">
-        Prices may change depending on the length of the rental and the price of
-        your rental car.
-      </p>
-      <div class="rental-summary__car--details">
-        <span class="rental-summary__car--image car__image__bg">
-          <img
-            class="car__image"
-            src="./assests/car.png"
-            alt="Nissan GT-R photo"
-          />
-        </span>
+    <section class="rental-info card">
+      <div class="rental-info__header">
+        <h3 class="rental-info__title">Rental Info</h3>
+        <p class="rental-info__explanation">Please select your rental date</p>
+      </div>
+      <div>
+        <input type="checkbox" name="pick-up" id="pick-up" />
+        <label for="pick-up">Pick-Up</label>
+      </div>
+      <div class="pick-up__info">
         <div>
-          <h5 class="rental-summary__car--model">Nissan GT - R</h5>
-          <div class="rental-summary__car--rate">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.16676 0.658136C8.22433 0.4756 8.33858 0.316168 8.49294 0.202997C8.64729 0.0898255 8.8337 0.0288086 9.0251 0.0288086C9.21649 0.0288086 9.40291 0.0898255 9.55726 0.202997C9.71161 0.316168 9.82587 0.4756 9.88343 0.658136L11.4334 5.4248H16.4334C16.6317 5.41731 16.8269 5.47492 16.9893 5.58883C17.1517 5.70275 17.2724 5.8667 17.3329 6.05565C17.3933 6.24459 17.3903 6.44814 17.3242 6.63518C17.2581 6.82222 17.1325 6.98248 16.9668 7.09147L12.9084 10.0331L14.4584 14.8081C14.5197 14.99 14.5213 15.1867 14.4628 15.3696C14.4044 15.5524 14.2891 15.7118 14.1336 15.8244C13.9782 15.937 13.7908 15.997 13.5989 15.9955C13.407 15.9941 13.2205 15.9314 13.0668 15.8165L9.0001 12.8415L4.94176 15.7915C4.78802 15.9064 4.60157 15.9691 4.40963 15.9705C4.2177 15.972 4.03034 15.912 3.87491 15.7994C3.71948 15.6868 3.60412 15.5274 3.54569 15.3446C3.48725 15.1617 3.4888 14.965 3.5501 14.7831L5.1001 10.0081L1.04176 7.06647C0.876001 6.95748 0.750474 6.79722 0.684365 6.61018C0.618256 6.42314 0.615199 6.21959 0.675661 6.03065C0.736123 5.8417 0.85678 5.67775 1.0192 5.56383C1.18161 5.44992 1.37686 5.39231 1.5751 5.3998H6.5751L8.16676 0.658136Z"
-                  fill="#FBAD39"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.16676 0.658136C8.22433 0.4756 8.33858 0.316168 8.49294 0.202997C8.64729 0.0898255 8.8337 0.0288086 9.0251 0.0288086C9.21649 0.0288086 9.40291 0.0898255 9.55726 0.202997C9.71161 0.316168 9.82587 0.4756 9.88343 0.658136L11.4334 5.4248H16.4334C16.6317 5.41731 16.8269 5.47492 16.9893 5.58883C17.1517 5.70275 17.2724 5.8667 17.3329 6.05565C17.3933 6.24459 17.3903 6.44814 17.3242 6.63518C17.2581 6.82222 17.1325 6.98248 16.9668 7.09147L12.9084 10.0331L14.4584 14.8081C14.5197 14.99 14.5213 15.1867 14.4628 15.3696C14.4044 15.5524 14.2891 15.7118 14.1336 15.8244C13.9782 15.937 13.7908 15.997 13.5989 15.9955C13.407 15.9941 13.2205 15.9314 13.0668 15.8165L9.0001 12.8415L4.94176 15.7915C4.78802 15.9064 4.60157 15.9691 4.40963 15.9705C4.2177 15.972 4.03034 15.912 3.87491 15.7994C3.71948 15.6868 3.60412 15.5274 3.54569 15.3446C3.48725 15.1617 3.4888 14.965 3.5501 14.7831L5.1001 10.0081L1.04176 7.06647C0.876001 6.95748 0.750474 6.79722 0.684365 6.61018C0.618256 6.42314 0.615199 6.21959 0.675661 6.03065C0.736123 5.8417 0.85678 5.67775 1.0192 5.56383C1.18161 5.44992 1.37686 5.39231 1.5751 5.3998H6.5751L8.16676 0.658136Z"
-                  fill="#FBAD39"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.16676 0.658136C8.22433 0.4756 8.33858 0.316168 8.49294 0.202997C8.64729 0.0898255 8.8337 0.0288086 9.0251 0.0288086C9.21649 0.0288086 9.40291 0.0898255 9.55726 0.202997C9.71161 0.316168 9.82587 0.4756 9.88343 0.658136L11.4334 5.4248H16.4334C16.6317 5.41731 16.8269 5.47492 16.9893 5.58883C17.1517 5.70275 17.2724 5.8667 17.3329 6.05565C17.3933 6.24459 17.3903 6.44814 17.3242 6.63518C17.2581 6.82222 17.1325 6.98248 16.9668 7.09147L12.9084 10.0331L14.4584 14.8081C14.5197 14.99 14.5213 15.1867 14.4628 15.3696C14.4044 15.5524 14.2891 15.7118 14.1336 15.8244C13.9782 15.937 13.7908 15.997 13.5989 15.9955C13.407 15.9941 13.2205 15.9314 13.0668 15.8165L9.0001 12.8415L4.94176 15.7915C4.78802 15.9064 4.60157 15.9691 4.40963 15.9705C4.2177 15.972 4.03034 15.912 3.87491 15.7994C3.71948 15.6868 3.60412 15.5274 3.54569 15.3446C3.48725 15.1617 3.4888 14.965 3.5501 14.7831L5.1001 10.0081L1.04176 7.06647C0.876001 6.95748 0.750474 6.79722 0.684365 6.61018C0.618256 6.42314 0.615199 6.21959 0.675661 6.03065C0.736123 5.8417 0.85678 5.67775 1.0192 5.56383C1.18161 5.44992 1.37686 5.39231 1.5751 5.3998H6.5751L8.16676 0.658136Z"
-                  fill="#FBAD39"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.16676 0.658136C8.22433 0.4756 8.33858 0.316168 8.49294 0.202997C8.64729 0.0898255 8.8337 0.0288086 9.0251 0.0288086C9.21649 0.0288086 9.40291 0.0898255 9.55726 0.202997C9.71161 0.316168 9.82587 0.4756 9.88343 0.658136L11.4334 5.4248H16.4334C16.6317 5.41731 16.8269 5.47492 16.9893 5.58883C17.1517 5.70275 17.2724 5.8667 17.3329 6.05565C17.3933 6.24459 17.3903 6.44814 17.3242 6.63518C17.2581 6.82222 17.1325 6.98248 16.9668 7.09147L12.9084 10.0331L14.4584 14.8081C14.5197 14.99 14.5213 15.1867 14.4628 15.3696C14.4044 15.5524 14.2891 15.7118 14.1336 15.8244C13.9782 15.937 13.7908 15.997 13.5989 15.9955C13.407 15.9941 13.2205 15.9314 13.0668 15.8165L9.0001 12.8415L4.94176 15.7915C4.78802 15.9064 4.60157 15.9691 4.40963 15.9705C4.2177 15.972 4.03034 15.912 3.87491 15.7994C3.71948 15.6868 3.60412 15.5274 3.54569 15.3446C3.48725 15.1617 3.4888 14.965 3.5501 14.7831L5.1001 10.0081L1.04176 7.06647C0.876001 6.95748 0.750474 6.79722 0.684365 6.61018C0.618256 6.42314 0.615199 6.21959 0.675661 6.03065C0.736123 5.8417 0.85678 5.67775 1.0192 5.56383C1.18161 5.44992 1.37686 5.39231 1.5751 5.3998H6.5751L8.16676 0.658136Z"
-                  fill="#FBAD39"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="18"
-                viewBox="0 0 20 18"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M9.16676 1.65814C9.22433 1.4756 9.33858 1.31617 9.49294 1.203C9.64729 1.08983 9.8337 1.02881 10.0251 1.02881C10.2165 1.02881 10.4029 1.08983 10.5573 1.203C10.7116 1.31617 10.8259 1.4756 10.8834 1.65814L12.4334 6.4248H17.4334C17.6317 6.41731 17.8269 6.47492 17.9893 6.58883C18.1517 6.70275 18.2724 6.8667 18.3329 7.05565C18.3933 7.24459 18.3903 7.44814 18.3242 7.63518C18.2581 7.82222 18.1325 7.98248 17.9668 8.09147L13.9084 11.0331L15.4584 15.8081C15.5197 15.99 15.5213 16.1867 15.4628 16.3696C15.4044 16.5524 15.2891 16.7118 15.1336 16.8244C14.9782 16.937 14.7908 16.997 14.5989 16.9955C14.407 16.9941 14.2205 16.9314 14.0668 16.8165L10.0001 13.8415L5.94176 16.7915C5.78802 16.9064 5.60157 16.9691 5.40963 16.9705C5.2177 16.972 5.03034 16.912 4.87491 16.7994C4.71948 16.6868 4.60412 16.5274 4.54569 16.3446C4.48725 16.1617 4.4888 15.965 4.5501 15.7831L6.1001 11.0081L2.04176 8.06647C1.876 7.95748 1.75047 7.79722 1.68437 7.61018C1.61826 7.42314 1.6152 7.21959 1.67566 7.03065C1.73612 6.8417 1.85678 6.67775 2.0192 6.56383C2.18161 6.44992 2.37686 6.39231 2.5751 6.3998H7.5751L9.16676 1.65814Z"
-                  stroke="#C3D4E9"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-            <p>440+ Reviewer</p>
-          </div>
+          <label for="pick-upcity" class="label">Location</label>
+          <select class="input" name="pick-upcity" id="pick-upcity">
+            <option disabled selected value="selectcity">
+              Select your city
+            </option>
+            <option value="newyork">New York</option>
+            <option value="losangles">Los Angles</option>
+            <option value="wanshington">Washington</option>
+          </select>
         </div>
-      </div>
-      <span class="line"></span>
-      <div class="subtotal">
-        <p class="subtotal__title">Subtotal</p>
-        <p class="subtotal__price">$80.00</p>
-      </div>
-      <div class="tax">
-        <p class="tax__title">Tax</p>
-        <p class="tax__price">$0</p>
-      </div>
-      <div class="promo-code">
-        <label class="label" for="pcode">Apply now</label>
-        <input
-          type="text"
-          class="input"
-          id="pcode"
-          name="pcode"
-          placeholder="Apply promo code"
-        />
-      </div>
-      <div class="total-rental-price">
         <div>
-          <p class="total-rental-price__title">Total Rental Price</p>
-          <p class="total-rental-price__explanation">
-            Overall price
-          </p>
+          <label for="pick-update" class="label">Date</label>
+          <input class="input" name="pick-update" type="date" />
         </div>
-        <p class="total-rental-price__price">$80.00</p>
+        <div>
+          <label for="pick-uptime" class="label">Time</label>
+          <input class="input" name="pick-uptime" type="time" />
+        </div>
       </div>
 
+      <div>
+        <input type="checkbox" name="drop-off" id="drop-off" />
+        <label for="drop-off">Drop-off</label>
+      </div>
+
+      <div class="drop-off__info">
+        <div>
+          <label for="drop-offcity" class="label">Location</label>
+          <select class="input" name="drop-offcity" id="drop-offcity">
+            <option disabled selected value="selectcity">
+              Select your city
+            </option>
+            <option value="newyork">New York</option>
+            <option value="losangles">Los Angles</option>
+            <option value="wanshington">Washington</option>
+          </select>
+        </div>
+        <div>
+          <label for="drop-offdate" class="label">Date</label>
+          <input class="input" name="drop-offdate" type="date" />
+        </div>
+        <div>
+          <label for="drop-offtime" class="label">Time</label>
+          <input class="input" name="drop-offtime" type="time" />
+        </div>
+      </div>
     </section>
   </body>
 </html>
