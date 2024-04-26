@@ -88,7 +88,7 @@ input:focus {
   transform: rotatey(180deg);
 }
 
-/* Biling Info */
+/* Biling Info and Rental Info */
 
 .biling-info {
   display: flex;
@@ -140,6 +140,42 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+/* Rental Info */
+
+.rental-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+}
+.pick-up__info {
+  margin-bottom: 3.2rem;
+}
+.pick-up__checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
+.rental-info .label .input {
+  margin-top: 1.6rem;
+}
+.rental-info select {
+  color: var(--Secondary-300);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 200%; /* 28px */
+}
+
+.rental-info .checkbox {
+  margin-bottom: 2.4rem;
+}
+.rental-info .checkbox span {
+  color: var(--Secondary-500);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  margin-left: 0.8rem;
 }
 
 /* rental Summary */
@@ -362,43 +398,6 @@ input:focus {
   cursor: pointer;
 }
 
-/* Rental Info */
-
-.rental-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 80rem;
-}
-.pick-up__info {
-  margin-bottom: 3.2rem;
-}
-.pick-up__checkbox {
-  display: flex;
-  align-items: center;
-  margin-top: 3.2rem;
-}
-
-.rental-info .label .input {
-  margin-top: 1.6rem;
-}
-.rental-info select {
-  color: var(--Secondary-300);
-  font-size: 1.4;
-  font-weight: 400;
-  line-height: 200%; /* 28px */
-}
-
-.rental-info .checkbox {
-  margin-bottom: 2.4rem;
-}
-.rental-info .checkbox span {
-  color: var(--Secondary-500);
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: -0.32px;
-  margin-left: 0.8rem;
-}
-
 /* Responsive sm size  */
 
 @media screen and (max-width: 640px) {
@@ -423,7 +422,7 @@ input:focus {
     letter-spacing: -0.28px;
   }
 
-  /* Biling Info */
+  /* Biling Info and Rental info   */
 
   .biling-info__body,
   .pick-up__info,
@@ -453,6 +452,22 @@ input:focus {
   .biling-info__title {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+  }
+  .rental-info .checkbox {
+    margin-bottom: 2rem;
+  }
+  .rental-info .label .input {
+    margin-top: 1.2rem;
+  }
+  .pick-up__info {
+    margin-bottom: 2.4rem;
+  }
+  .rental-info select {
+    font-size: 1.2rem;
+  }
+  .pick-up__checkbox {
+  
+    margin-top: 2.4rem;
   }
 
   /* Rental Summary  */
