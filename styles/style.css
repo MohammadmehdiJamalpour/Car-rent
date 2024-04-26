@@ -375,6 +375,7 @@ input:focus {
 .pick-up__checkbox {
   display: flex;
   align-items: center;
+  margin-top: 3.2rem;
 }
 
 .rental-info .label .input {
