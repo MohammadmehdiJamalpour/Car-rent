@@ -15,7 +15,7 @@
         <p class="rental-info__step">Step 1 of 4</p>
       </div>
 
-      <label for="pick-up" class="pick-up__checkbox">
+      <label for="pick-up" class="pick-up__checkbox checkbox">
         <input type="radio" name="pick-up" id="pick-up" />
         <span> Pick-Up</span>
       </label>
@@ -26,7 +26,7 @@
             >Location
             <select class="input" name="pick-upcity" id="pick-upcity">
               <option disabled selected value="selectcity">
-                Select your city
+               Select your city
               </option>
               <option value="newyork">New York</option>
               <option value="losangles">Los Angles</option>
@@ -39,7 +39,7 @@
             >Date
             <input
               class="input"
-              placeholder="Date"
+              placeholder="Select your date"
               type="text"
               onfocus="(this.type='date')"
               onblur="(this.type='text')"
@@ -54,7 +54,7 @@
             <input
               class="input"
               name="pick-uptime"
-              placeholder="Time"
+              placeholder="Select your time"
               type="text"
               onfocus="(this.type='time')"
               onblur="(this.type='text')"
@@ -64,17 +64,12 @@
         </div>
       </div>
 
-      <div>
-        <label for="drop-off">
-          <input
-            class="drop-off__checkbox"
-            type="radio"
-            name="drop-off"
-            id="drop-off"
-          />
-          Drop-off
+    
+        <label for="drop-off" class="drop-off__checkbox checkbox">
+          <input type="radio" name="drop-off" id="drop-off" />
+          <span> Drop-off</span>
         </label>
-      </div>
+      
 
       <div class="drop-off__info">
         <div>
@@ -95,7 +90,7 @@
             >Date
             <input
               class="input"
-              placeholder="Date"
+              placeholder="Select your date"
               type="text"
               onfocus="(this.type='date')"
               onblur="(this.type='text')"
@@ -110,7 +105,7 @@
             <input
               class="input"
               name="drop-offtime"
-              placeholder="Time"
+              placeholder="Select your time"
               type="text"
               onfocus="(this.type='time')"
               onblur="(this.type='text')"
