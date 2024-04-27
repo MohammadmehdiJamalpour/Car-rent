@@ -45,7 +45,7 @@ html {
   padding: 2.4rem;
 }
 
-/* Input and label  */
+/* Input , label , Checkbox  */
 .label {
   margin-bottom: 1.6rem;
   color: var(--Secondary-500);
@@ -60,6 +60,7 @@ html {
   overflow-y: auto;
   width: 0;
   min-width: 100%;
+  margin-top: 1.6rem;
 }
 input:focus {
   background: var(--Primary-100);
@@ -69,6 +70,19 @@ input:focus {
   color: var(--Secondary-300);
   font-size: 1.4rem;
   font-weight: 300;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.checkbox span {
+  color: var(--Secondary-500);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  margin-left: 0.8rem;
 }
 
 /* car images and background general styles  */
@@ -89,20 +103,25 @@ input:focus {
 }
 
 /* Biling Info , Rental Info , Payment Method and Confirmation  */
-.rental-info, .biling-info , .payment-method {
+.rental-info,
+.biling-info,
+.payment-method {
   display: flex;
   flex-direction: column;
   max-width: 80rem;
 }
 
 .biling-info__header,
-.rental-info__header, .payment-method__header{
+.rental-info__header,
+.payment-method__header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 3.2rem;
 }
 .biling-info__step,
-.rental-info__step, .payment-method__step {
+.rental-info__step,
+.payment-method__step {
   grid-column-start: 2;
   grid-row-start: 2;
   justify-self: self-end;
@@ -111,7 +130,8 @@ input:focus {
   font-weight: 500;
 }
 .biling-info__explanation,
-.rental-info__explanation ,.payment-method__explanation{
+.rental-info__explanation,
+.payment-method__explanation {
   grid-row-start: 2;
   color: var(--Secondary-300, #90a3bf);
   font-size: 1.4rem;
@@ -120,7 +140,8 @@ input:focus {
 
 .biling-info__body,
 .pick-up__info,
-.drop-off__info {
+.drop-off__info,
+.credit-card__details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -129,7 +150,8 @@ input:focus {
 }
 
 .biling-info__title,
-.rental-info__title, .payment-method__title {
+.rental-info__title,
+.payment-method__title {
   color: var(--Secondary-500);
   font-size: 2rem;
   font-weight: 700;
@@ -143,20 +165,13 @@ input:focus {
   flex-direction: column;
   align-items: flex-start;
 }
+
 /* Rental Info */
 
 .pick-up__info {
   margin-bottom: 3.2rem;
 }
-.pick-up__checkbox {
-  display: flex;
-  align-items: center;
-  margin-top: 3.2rem;
-}
 
-.rental-info .label .input {
-  margin-top: 1.6rem;
-}
 .rental-info select {
   color: var(--Secondary-300);
   font-size: 1.4rem;
@@ -164,15 +179,14 @@ input:focus {
   line-height: 200%; /* 28px */
 }
 
-.rental-info .checkbox {
-  margin-bottom: 2.4rem;
+/* Payment Method */
+.credit-card {
+  background-color: var(--input-background-color);
+  padding: 2.4rem;
+  border-radius: 10px;
 }
-.rental-info .checkbox span {
-  color: var(--Secondary-500);
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: -0.32px;
-  margin-left: 0.8rem;
+.credit-card .input {
+  background-color: var(--white);
 }
 
 /* rental Summary */
@@ -403,7 +417,7 @@ input:focus {
     margin: 3.2rem 2.4rem;
   }
 
-  /* input */
+  /* input , label , checkbox */
   .input {
     font-size: 1.2rem;
     letter-spacing: -0.24px;
@@ -419,20 +433,32 @@ input:focus {
     letter-spacing: -0.28px;
   }
 
-  /* * Biling Info , Rental Info , Payment Method and Confirmation  */ */
-
+  .checkbox {
+    margin-bottom: 2rem;
+  }
+  /* * Biling Info , Rental Info , Payment Method and Confirmation  */
+  .biling-info__header,
+  .rental-info__header,
+  .payment-method__header {
+    margin-bottom: 2.4rem;
+  }
   .biling-info__body,
   .pick-up__info,
-  .drop-off__info {
+  .drop-off__info,
+  .credit-card__details {
     grid-template-columns: 1fr;
   }
   .biling-info__title,
-  .rental-info__title {
+  .rental-info__title,
+  .payment-method__title,
+  .rental-summary__title {
     font-size: 1.6rem;
     letter-spacing: -0.32px;
+    margin-bottom: 0.5rem;
   }
   .biling-info__explanation,
-  .rental-info__explanation {
+  .rental-info__explanation,
+  .payment-method__explanation {
     font-size: 1.2rem;
     line-height: 160%; /* 19.2px */
     letter-spacing: -0.12px;
@@ -440,7 +466,8 @@ input:focus {
     grid-column-end: -1;
   }
   .biling-info__step,
-  .rental-info__step {
+  .rental-info__step,
+  .payment-method__step {
     grid-row-end: 1;
     justify-self: self-end;
     font-size: 1.2rem;
@@ -449,34 +476,17 @@ input:focus {
 
   /* Biling Info  */
 
-  
-  .biling-info__title {
-    margin-bottom: 0.5rem;
-  }
-
   /* Rental info  */
 
-  .rental-info .checkbox {
-    margin-bottom: 2rem;
-  }
-  .rental-info .label .input {
-    margin-top: 1.2rem;
-  }
   .pick-up__info {
     margin-bottom: 2.4rem;
   }
   .rental-info select {
     font-size: 1.2rem;
   }
-  .pick-up__checkbox {
-    margin-top: 2.4rem;
-  }
 
   /* Rental Summary  */
 
-  .rental-summary__title {
-    font-size: 1.6rem;
-  }
   .rental-summary__explanation {
     font-size: 1.2rem;
     line-height: 160%; /* 19.2px */

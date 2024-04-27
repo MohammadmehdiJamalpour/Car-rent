@@ -14,6 +14,56 @@
         <p class="payment-method__explanation">Please enter your payment method</p>
         <p class="payment-method__step">Step 3 of 4</p>
       </div>
+      <div class="payment-method__body">
+        <div class="credit-card">
+          <label for="credit-card" class="credit-card__checkbox checkbox">
+            <input type="radio" name="credit-card" id="credit-card" />
+            <span> Credit Card</span>
+          </label>
+          <div class="credit-card__details">
+          <div>
+            <label class="label" for="cnumber">Card Number</label>
+            <input
+              class="input"
+              type="text"
+              id="cnumber"
+              name="cnumber"
+              placeholder="Card number"
+            />
+          </div>
+          <div>
+            <label class="label" for="edate">Expration Date</label>
+            <input
+              class="input"
+              type="text"
+              id="edate"
+              name="edate"
+              placeholder="DD / MM / YY"
+            />
+          </div>
+          <div>
+            <label class="label" for="cholder">Card Holder</label>
+            <input
+              class="input"
+              type="text"
+              id="cholder"
+              name="cholder"
+              placeholder="Card holder"
+            />
+          </div>
+          <div>
+            <label class="label" for="cvc">CVC</label>
+            <input
+              class="input"
+              type="text"
+              id="cvc"
+              name="cvc"
+              placeholder="CVC"
+            />
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
