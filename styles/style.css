@@ -88,21 +88,21 @@ input:focus {
   transform: rotatey(180deg);
 }
 
-/* Biling Info and Rental Info */
-
-.biling-info {
+/* Biling Info , Rental Info , Payment Method and Confirmation  */
+.rental-info, .biling-info , .payment-method {
   display: flex;
   flex-direction: column;
-  max-width: 85rem;
+  max-width: 80rem;
 }
+
 .biling-info__header,
-.rental-info__header {
+.rental-info__header, .payment-method__header{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 .biling-info__step,
-.rental-info__step {
+.rental-info__step, .payment-method__step {
   grid-column-start: 2;
   grid-row-start: 2;
   justify-self: self-end;
@@ -111,7 +111,7 @@ input:focus {
   font-weight: 500;
 }
 .biling-info__explanation,
-.rental-info__explanation {
+.rental-info__explanation ,.payment-method__explanation{
   grid-row-start: 2;
   color: var(--Secondary-300, #90a3bf);
   font-size: 1.4rem;
@@ -129,12 +129,14 @@ input:focus {
 }
 
 .biling-info__title,
-.rental-info__title {
+.rental-info__title, .payment-method__title {
   color: var(--Secondary-500);
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+
+/* Biling Info  */
 
 .biling-info__body div {
   display: flex;
@@ -143,11 +145,6 @@ input:focus {
 }
 /* Rental Info */
 
-.rental-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 80rem;
-}
 .pick-up__info {
   margin-bottom: 3.2rem;
 }
@@ -422,7 +419,7 @@ input:focus {
     letter-spacing: -0.28px;
   }
 
-  /* Biling Info and Rental info   */
+  /* * Biling Info , Rental Info , Payment Method and Confirmation  */ */
 
   .biling-info__body,
   .pick-up__info,
@@ -449,10 +446,16 @@ input:focus {
     font-size: 1.2rem;
     letter-spacing: -0.12px;
   }
+
+  /* Biling Info  */
+
+  
   .biling-info__title {
-    font-size: 1.6rem;
     margin-bottom: 0.5rem;
   }
+
+  /* Rental info  */
+
   .rental-info .checkbox {
     margin-bottom: 2rem;
   }
@@ -466,7 +469,6 @@ input:focus {
     font-size: 1.2rem;
   }
   .pick-up__checkbox {
-  
     margin-top: 2.4rem;
   }
 

@@ -267,3 +267,117 @@
       <button class="rent-btn">Rental Now</button>
     </div>
   </div>
+
+
+
+
+  <!-- Rental Info  -->
+
+  <section class="rental-info card">
+    <div class="rental-info__header">
+      <h3 class="rental-info__title">Rental Info</h3>
+      <p class="rental-info__explanation">Please select your rental date</p>
+      <p class="rental-info__step">Step 2 of 4</p>
+    </div>
+
+    <label for="pick-up" class="pick-up__checkbox checkbox">
+      <input type="radio" name="pick-up" id="pick-up" />
+      <span> Pick-Up</span>
+    </label>
+
+    <div class="pick-up__info">
+      <div>
+        <label for="pick-upcity" class="label"
+          >Location
+          <select class="input" name="pick-upcity" id="pick-upcity">
+            <option disabled selected value="selectcity">
+             Select your city
+            </option>
+            <option value="newyork">New York</option>
+            <option value="losangles">Los Angles</option>
+            <option value="wanshington">Washington</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label for="pick-update" class="label"
+          >Date
+          <input
+            class="input"
+            placeholder="Select your date"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+            name="pick-update"
+          />
+        </label>
+      </div>
+      <div>
+        <label for="pick-uptime" class="label"
+          >Time
+          <input
+            class="input"
+            name="pick-uptime"
+            placeholder="Select your time"
+            type="text"
+            onfocus="(this.type='time')"
+            onblur="(this.type='text')"
+            id="time"
+          />
+        </label>
+      </div>
+    </div>
+
+  
+      <label for="drop-off" class="drop-off__checkbox checkbox">
+        <input type="radio" name="drop-off" id="drop-off" />
+        <span> Drop-off</span>
+      </label>
+    
+
+    <div class="drop-off__info">
+      <div>
+        <label for="drop-offcity" class="label"
+          >Location
+          <select class="input" name="drop-offcity" id="drop-offcity">
+            <option disabled selected value="selectcity">
+              Select your city
+            </option>
+            <option value="newyork">New York</option>
+            <option value="losangles">Los Angles</option>
+            <option value="wanshington">Washington</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label for="drop-offdate" class="label"
+          >Date
+          <input
+            class="input"
+            placeholder="Select your date"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+            name="drop-offdate"
+          />
+        </label>
+      </div>
+      <div for="dro">
+        <label for="drop-offtime" class="label"
+          >Time
+          <input
+            class="input"
+            name="drop-offtime"
+            placeholder="Select your time"
+            type="text"
+            onfocus="(this.type='time')"
+            onblur="(this.type='text')"
+            id="time"
+            name="pick-uptime"
+          />
+        </label>
+      </div>
+    </div>
+  </section>
