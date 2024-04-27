@@ -188,6 +188,21 @@ input:focus {
 .credit-card .input {
   background-color: var(--white);
 }
+.credit-card__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.credit-card__header label {
+  align-items: center;
+}
+.visa-logo{
+  display: flex;
+  align-items: center;
+}
+.visa-logo :first-child{
+  margin-right:1.2rem ;
+}
 
 /* rental Summary */
 
