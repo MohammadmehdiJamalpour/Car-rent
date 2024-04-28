@@ -47,7 +47,6 @@ html {
 
 /* Input , label , Checkbox  */
 .label {
-  margin-bottom: 1.6rem;
   color: var(--Secondary-500);
   font-size: 1.6rem;
   font-weight: 600;
@@ -74,7 +73,6 @@ input:focus {
 .checkbox {
   display: flex;
   align-items: center;
-  margin-bottom: 2.4rem;
 }
 
 .checkbox span {
@@ -188,23 +186,33 @@ input:focus {
 .credit-card .input {
   background-color: var(--white);
 }
-.credit-card__header{
+.credit-card__details {
+  margin-top: 3.2rem;
+}
+.credit-card__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.credit-card__header label {
-  align-items: center;
-}
-.visa-logo{
+.visa-logo {
   display: flex;
   align-items: center;
 }
-.visa-logo :first-child{
-  margin-right:1.2rem ;
+.visa-logo :first-child {
+  margin-right: 1.2rem;
 }
-
-
+.credit-card__header label {
+  display: inline-block;
+}
+.paypal-method,
+.btc-method {
+  padding: 1.6rem 3.2rem;
+  margin-top: 2.4rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--input-background-color);
+}
 
 /* rental Summary */
 
@@ -439,6 +447,7 @@ input:focus {
     font-size: 1.2rem;
     letter-spacing: -0.24px;
     padding: 1.8rem 2.4rem;
+    margin-top: 1.2rem;
   }
   .input::placeholder {
     font-size: 1.2rem;
@@ -450,9 +459,6 @@ input:focus {
     letter-spacing: -0.28px;
   }
 
-  .checkbox {
-    margin-bottom: 2rem;
-  }
   /* * Biling Info , Rental Info , Payment Method and Confirmation  */
   .biling-info__header,
   .rental-info__header,
@@ -501,7 +507,10 @@ input:focus {
   .rental-info select {
     font-size: 1.2rem;
   }
-
+  /* Payment method  */
+  .credit-card__details {
+    margin-top: 2rem;
+  }
   /* Rental Summary  */
 
   .rental-summary__explanation {
